@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MasterRSModelStoreContainer" CdmEntityContainer="MasterRSEntities">
+    <EntitySetMapping Name="DataDinamis">
+      <EntityTypeMapping TypeName="MasterRSModel.DataDinami">
+        <MappingFragment StoreEntitySet="DataDinamis">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Round" ColumnName="Round" />
+          <ScalarProperty Name="IDRoundArea" ColumnName="IDRoundArea" />
+          <ScalarProperty Name="RoundArea" ColumnName="RoundArea" />
+          <ScalarProperty Name="IDArea" ColumnName="IDArea" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="IDSubArea" ColumnName="IDSubArea" />
+          <ScalarProperty Name="SubArea" ColumnName="SubArea" />
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IDOption" ColumnName="IDOption" />
+          <ScalarProperty Name="OptionArea" ColumnName="OptionArea" />
+          <ScalarProperty Name="IDItem" ColumnName="IDItem" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="Komponen" ColumnName="Komponen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DataStatis">
+      <EntityTypeMapping TypeName="MasterRSModel.DataStati">
+        <MappingFragment StoreEntitySet="DataStatis">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Round" ColumnName="Round" />
+          <ScalarProperty Name="IDRoundArea" ColumnName="IDRoundArea" />
+          <ScalarProperty Name="RoundArea" ColumnName="RoundArea" />
+          <ScalarProperty Name="IDArea" ColumnName="IDArea" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="IDSubArea" ColumnName="IDSubArea" />
+          <ScalarProperty Name="SubArea" ColumnName="SubArea" />
+          <ScalarProperty Name="IDItem" ColumnName="IDItem" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="Komponen" ColumnName="Komponen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lokasis">
+      <EntityTypeMapping TypeName="MasterRSModel.Lokasi">
+        <MappingFragment StoreEntitySet="Lokasi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDProvinsi" ColumnName="IDProvinsi" />
+          <ScalarProperty Name="Provinsi" ColumnName="Provinsi" />
+          <ScalarProperty Name="Kota" ColumnName="Kota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MasterRSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DataDinamis">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Round" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDRoundArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoundArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="Area" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDSubArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="SubArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDOption" Type="nvarchar" MaxLength="50" />
+    <Property Name="OptionArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDItem" Type="nvarchar" MaxLength="50" />
+    <Property Name="Item" Type="nvarchar" MaxLength="200" />
+    <Property Name="Komponen" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DataStatis">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Round" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDRoundArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoundArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="Area" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDSubArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="SubArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDItem" Type="nvarchar" MaxLength="50" />
+    <Property Name="Item" Type="nvarchar" MaxLength="100" />
+    <Property Name="Komponen" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Lokasi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDProvinsi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Provinsi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Kota" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="MasterRSModelStoreContainer">
+    <EntitySet Name="DataDinamis" EntityType="Self.DataDinamis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DataStatis" EntityType="Self.DataStatis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lokasi" EntityType="Self.Lokasi" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

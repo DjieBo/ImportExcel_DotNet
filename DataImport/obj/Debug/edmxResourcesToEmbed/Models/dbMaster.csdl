@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MasterRSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DataDinami">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Round" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDRoundArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoundArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Area" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDSubArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SubArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDOption" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OptionArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDItem" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Item" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Komponen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DataStati">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Round" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDRoundArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoundArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Area" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDSubArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SubArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDItem" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Item" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Komponen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Lokasi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDProvinsi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Provinsi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kota" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="MasterRSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DataDinamis" EntityType="Self.DataDinami" />
+    <EntitySet Name="DataStatis" EntityType="Self.DataStati" />
+    <EntitySet Name="Lokasis" EntityType="Self.Lokasi" />
+  </EntityContainer>
+</Schema>

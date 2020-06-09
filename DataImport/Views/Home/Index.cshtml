@@ -1,0 +1,10 @@
+﻿@using (Html.BeginForm("ImportKota", "Home", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    <h3>Import Kabupaten / Kota</h3>
+    <div class="form-group">
+        <input type="file" name="UploadKota" class="form-control" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+}
